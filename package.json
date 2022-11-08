@@ -1,0 +1,32 @@
+{
+  "name": "npm-demo-app",
+  "version": "1.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch": "nodemon ./start.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "consolidate": "^0.16.0",
+    "dotenv": "^8.2.0",
+    "escape-html": "^1.0.3",
+    "express": "^4.17.1",
+    "express-session": "^1.17.3",
+    "express-validator": "^6.14.0",
+    "http-auth": "^4.1.2",
+    "loader-in-console": "^1.2.1",
+    "mongoose": "^5.9.10",
+    "node-console-loading": "^2.0.1",
+    "pug": "^2.0.4",
+    "swig": "^1.4.2",
+    "tinymce": "^6.0.1",
+    "wpapi": "^1.2.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.3"
+  }
+}

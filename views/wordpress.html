@@ -1,0 +1,50 @@
+<!DOCTYPE html> <!-- Required for TinyMCE to function as intended -->
+<html>
+
+  <head>
+    <title>Wordpress Sites</title>
+    <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+     
+    <script>
+    tinymce.init({
+        selector: 'textarea',
+        plugins: 'code',
+        toolbar: 'code',
+        height: 400,
+        content_style: 'body { font-family:Helvetica,Arial,sans-serif; font-size:14px }'
+    });
+
+    
+    </script>
+  </head>
+
+  <body>
+    <form action="/" method="post">
+        <h1>Please put your html</h1>
+        <!-- Text area matching the selector specified in the TinyMCE configuration -->
+        <label>POST TITLE</label><br><br>
+        <input type="text" name="title"><br><br>
+
+        <label>REPLACE FROM</label><br><br>
+        <input type="text" name="replaceFrom"><br><br>
+
+        <!-- <label>USER BLOGS</label><br><br>
+        <input type="text" name="bloggerName"><br><br> -->
+
+
+        <label>Content</label><br><br>
+        <textarea name="content"></textarea><br><br>
+        <label>Blogs</label><br><br>
+        <textarea name="blogs"></textarea><br><br>
+        <label>Wordpress Sites</label><br><br>
+        <textarea name="sites"></textarea><br><br>
+        <label>POST LIMIT</label><br><br>
+        <input type="number" name="limit" ><br><br><br>
+        <input type="submit" value="Submit">
+    </form>
+  </body>
+
+  <!-- Script element sourcing TinyMCE -->
+  <!-- Script element sourcing the TinyMCE configuration -->
+  <!-- <script type="application/javascript" src= "/js/my-tinymce-config.js"></script> -->
+</html>
