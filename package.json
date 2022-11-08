@@ -10,6 +10,9 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "engines": {
+    "node": "14.17.3"
+  },
   "dependencies": {
     "body-parser": "^1.19.0",
     "consolidate": "^0.16.0",
@@ -20,7 +23,6 @@
     "express-validator": "^6.14.0",
     "http-auth": "^4.1.2",
     "loader-in-console": "^1.2.1",
-    "mongoose": "^5.9.10",
     "node-console-loading": "^2.0.1",
     "pug": "^2.0.4",
     "swig": "^1.4.2",
