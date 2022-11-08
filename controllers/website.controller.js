@@ -1,8 +1,6 @@
 var WPAPI = require( 'wpapi' );
 
 async function post (req , res ,next){
-    if(typeof req.body.count == 'undefined')
-        req.body.count = 1
     const blogs =  req.body.blogs.replace(/<[^>]*>?/gm, '').replace("\n" , "").replace(/[\r\n]/gm, ' ').split(" ").filter(function(e){return e});
     const allSites =  req.body.sites.replace(/<[^>]*>?/gm, '').replace("\n" , "").replace(/[\r\n]/gm, ' ').split(" ").filter(function(e){return e}); 
     console.time("TOTAL_TIME_IN_ONE_BLOG");
