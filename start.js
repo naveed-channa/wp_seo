@@ -1,11 +1,24 @@
 require('dotenv').config();
 
 
+// mongoose.connect(process.env.DATABASE, {
+//   useNewUrlParser: true,
+//   useUnifiedTopology: true
+// });
+
+// mongoose.connection
+//   .on('open', () => {
+//     console.log('Mongoose connection open');
+//   })
+//   .on('error', (err) => {
+//     console.log(`Connection error: ${err.message}`);
+//   });
+
 // require('./models/Registration');
 const app = require('./app');
 
-const { PORT=3000, LOCAL_ADDRESS='0.0.0.0' } = process.env
-server.listen(PORT, LOCAL_ADDRESS, () => {
-  const address = server.address();
-  console.log('server listening at..', address);
+const port = process.env.PORT || 8000;
+
+const server = app.listen(3001, () => {
+  console.log(`Express is running on port ${port}`);
 });
